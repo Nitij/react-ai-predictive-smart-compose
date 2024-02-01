@@ -8,7 +8,7 @@ const PORT = 3001;
 app.use(cors());
 
 app.get("/api/suggestions", async (req, res) => {
-  const OPENAI_API_KEY = "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";
+  const OPENAI_API_KEY = "your_openai_api_key";
   const openai = new OpenAI({ apiKey: OPENAI_API_KEY });
   const aiModel = "gpt-4-turbo-preview";
   const text = req.query.text;
